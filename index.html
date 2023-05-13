@@ -2,36 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
 </head>
 <body>
-    <div class="player-container">
-        <!-- Song -->
-        <div class="img-container">
-            <img src="img/jacinto-1.jpg" alt="algum art">
-        </div>
-        <h2 id="title">Electric Chill Machine</h2>
-        <h3 id="artist">Jacinto</h3>
-        <audio src="music/jacinto-1.mp3"></audio>
-        <!-- Progress Bar -->
-        <div class="progress-container" id="progress-container">
-            <div class="progress" id="progress"></div>
-            <div class="duration-wrapper">
-                <span id="current-time">0:00</span>
-                <span id="duration">0:00</span>
+    <!-- Navigation Bar -->
+    <div class="nav-container">
+        <nav>
+            <div class="title">Issam Abou</div>
+            <div class="right-items">
+              <a href="#">About Me</a>
+              <a href="#skill">Skills</a>
+              <a href="#project">Projects</a>
+              <a href="#footer">Contact</a>
             </div>
-        </div>
-        <!-- Controls -->
-        <div class="player-controls">
-            <i class="fas fa-backward" id="prev" title="Previous"></i>
-            <i class="fas fa-play main-button" id="play" title="Play"></i>
-            <i class="fas fa-forward" id="next" title="next"></i>
+        </nav>
+    </div>
+    <!-- About me Section -->
+    <div class="about-container" id="abou-me">
+        <div class="about-me">
+            <h1>Hey! I'm Issam Abou 👋</h2>
+            <h3>Front-End Developer</h3>
+            <p>"Para alcançar níveis mais altos na indústria de desenvolvimento, acredito que é crucial evoluir constantemente e nunca parar de aprender. Embora eu possa ter menos experiência do que alguns, tenho uma mentalidade focada em evoluir sempre. Ao lidar com desafios técnicos complexos, tenho desenvolvido habilidades de resolução de problemas eficazes. Estou sempre disposto a aprender com a experiência de profissionais, sabendo que isso me ajudará a crescer tanto pessoal quanto profissionalmente. Estou entusiasmado para explorar novas oportunidades e contribuir com a minha mentalidade de crescimento constante para uma empresa que valorize a cultura de aprendizagem."</p>
         </div>
     </div>
+    <!-- Skills -->
+    <h2 id="wordAfter">My Skills so far....</h2>
+    <div class="skill-container" id="skill">
+        <div class="skill sk1">
+            <i class="fa-brands fa-square-js"></i>
+            <h4>JavaScript</h4>
+            <p>JavaScript é uma das minhas habilidades principais como desenvolvedor front-end. Tenho experiência em escrever códigos JavaScript limpos e eficientes, aplicando as melhores práticas de desenvolvimento para criar aplicações web responsivas e interativas. Além disso, estou sempre há busca de atualizações e novas Frameworks JavaScript para aprimorar as minhas habilidades e permanecer atualizado com as tendências do indústria.</p>
+        </div>
+        <div class="skill sk2">
+            <i class="fa-brands fa-html5"></i>
+            <h4>HTML</h4>
+            <p> HTML é a base de todas as páginas da web e é essencial para qualquer desenvolvedor front-end. Tenho experiência em criar estruturas HTML limpas e semânticas, seguindo as melhores práticas de acessibilidade e SEO. Além disso, sou capaz de integrar outras tecnologias, como CSS e JavaScript, para criar interfaces de utilizador dinâmicas e interativas. Estou sempre á busca de novas formas de otimizar a estrutura HTML para melhorar o desempenho e a experiência do utilizador.</p>
+        </div>
+        <div class="skill sk3">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h4>CSS</h4>
+            <p>CSS é uma habilidade crucial para a criação de interfaces de utilizador bonitas e responsivas. Estou familiarizado com as principais propriedades do CSS e uso as melhores práticas de design responsivo para garantir que minhas aplicações sejam acessíveis e fáceis de usar em todos os dispositivos. Além disso, sou capaz de criar animações e efeitos visuais usando CSS, o que ajuda a melhorar a experiência do utilizador.</p>
+        </div>
+    </div>
+    <!-- Projects -->
+    <h2>My Projects</h2>
+    <div class="projects-container" id="project">
+        <div class="project proj1">
+            <h4>Generator of Quotes</h4>
+            <a href="https://issam7abou.github.io/generator_of_quotes/">
+                <img src="./pictures/quote-generator.png" alt="Quote Generator">
+            </a>
+            <h4>Recursos</h4>
+            <ul>
+                <li>Gerar Citaçoes aleatórias</li>
+                <li>Publicar no Twitter a citação</li>
+                <li>Layout the citação responsivo mediante o tamanho da citação</li>
+            </ul>
+            <h4>Implementação</h4>
+            <p>Eu desenvolvi um projeto que Gera Citações utilizando HTML, CSS e JavaScript. O projeto permite que os utilizadores gerem uma citação aleatória a partir de uma API com mais de 8000 citações.  
+
+            Para permitir aos utilizadores gerar uma citação aleatória, integrei uma função de API assíncrona. Ao usar uma função assíncrona, o código é executado de forma mais dinâmica e não para durante a solicitação de dados. 
+                
+            O projeto inclui duas funções: a primeira exibe um loader enquanto os dados da citação estão a ser carregados na API, e a segunda função exibe a citação na tela. O container da citação ajusta o seu tamanho de acordo com o comprimento da citação para garantir uma legibilidade ideal. 
+                
+            Além disso, o projeto possui um botão do Twitter que permite aos utilizadores compartilhem a citação atual no Twitter. 
+                
+            Em resumo, o projeto Gerador de Citações demonstra minha habilidade em trabalhar com APIs e manipular dados em JavaScript, bem como meu conhecimento em HTML e CSS para design de interface do utilizador.
+            </p>
+            <div class="btn-container">
+                <a href="https://issam7abou.github.io/generator_of_quotes/" class="button" target="_blank">Abrir Projeto</a>
+                <a href="https://github.com/Issam7Abou/generator_of_quotes" class="button" target="_blank">Source Code</a>
+            </div>
+        </div>
+        <div class="project proj2">
+            <h4>Audio Player</h4>
+            <a href="https://issam7abou.github.io/modern-audio-player/">
+                <img src="./pictures/audio-player.png" alt="Audio Player">
+            </a>
+            <h4>Recursos</h4>
+            <ul>
+                <li>Reproduzir, pausar, avançar e retroceder músicas</li>
+                <li>Exibir informações sobre a música, como artista, título e arte do álbum</li>
+                <li>Barra de progresso atualizada em tempo real para refletir a posição atual da música</li>
+                <li>Barra de progresso clicável para pular para qualquer ponto na música</li>
+                <li>Temporizador que exibe o tempo atual e a duração da música</li>
+                <li>Botões de reprodução/pausa e avanço estilizados para serem visualmente atraentes e fáceis de usar em dispositivos móveis</li>
+            </ul>
+            <h4>Implementação</h4>
+            <p>O projeto de Audio Player usa HTML, CSS e JavaScript para criar uma interface responsiva e amigável. Ele permite tocar, pausar, avançar e retroceder músicas, exibir informações do artista, título e arte do álbum e incorpora um banco de dados de músicas. Destaque para a barra de progresso atualizada em tempo real e os botões de reprodução/pausa e avanço estilizados para fácil uso. O projeto mostra habilidades as minhas habilidades na manipulação da DOM e dados em JavaScript, além do conhecimento em HTML e CSS para design de interface do usuário, resultando em uma experiência suave e responsiva para os utilizadores.
+            </p>
+            <div class="btn-container">
+                <a href="https://issam7abou.github.io/modern-audio-player/" class="button" target="_blank">Abrir Projeto</a>
+                <a href="https://github.com/Issam7Abou/modern-audio-player" class="button" target="_blank">Source Code</a>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Me -->
+    <div class="container" hidden>
+        <div style="text-align:center">
+          <h2>Contact Me! 📧</h2>
+          <p>Collaboration is the key to success, let's work together and build something we can be proud of.</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="./pictures/ribeira.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="" method="POST">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="email">Your Email<label>
+                    <input type="email" id="email" name="email" placeholder="Your Email address..">  
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+                    <button type="submit" value="Submit">SEND!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Quote Section -->
+    <div class="quote-container">
+        <p class="quote">"Alone we can do so little, together we can do so much."</p>
+        <h2 class="author">Helen Keller</h2>
+      </div>
+    <!-- Footer Section -->
+    <footer class="footer-container" id="footer">
+        <div class="line"></div>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/issam-abou/" target="_blank"><i class="fab fa-linkedin" style="color: #2556ad;"></i></a>
+            <a href="https://github.com/Issam7Abou" target="_blank"><i class="fab fa-github" style="color: #000000"></i></a>
+            <a href="mailto:issamstt@gmail.com"><i class="fas fa-envelope" style="color: #b92222;"></i></a>
+          </div>
+          <div class="footer-text">
+            <p>Copyright &copy; 2023 <a href="https://github.com/Issam7Abou" target="_blank">Issam Abou</a></p>
+          </div>
+    </footer>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
